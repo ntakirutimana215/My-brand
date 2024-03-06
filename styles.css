@@ -74,7 +74,7 @@ header {
 .Name {
   color: #150303;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 15px;
   margin-bottom: 10px;
   /* background-color: wheat; */
 }
@@ -640,9 +640,16 @@ ul li a {
   text-align: center;
   align-items: center;
 }
+@media screen and (max-width: 400px) {
+  .image {
+    align-items: center;
+    margin-left: -28px;
+   }
+   .image img {
+    width: 190px;
 
-@media screen and (max-width: 360px) {
-  .nav__list {
+   }
+   .nav__list {
     position: fixed;
     left: -100%;
     top: 47px;
@@ -654,6 +661,7 @@ ul li a {
     text-align: center;
     transition: 0.3s;
    }
+
   .hamburger {
     display: block;
   }
