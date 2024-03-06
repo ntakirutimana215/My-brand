@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+*{
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: 14px;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #150303;
+    background-color: #03FD57;
+}
+.header ul {
+    display: flex;
+    list-style: none 
+}
+.header ul li {
+    margin-right: 12px;
+    cursor: pointer;
+}
+.container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.grid {
+    display: grid;
+}
+.body {
+   
+    background-color: #03FD57;
+    padding-top: 200px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.Hero_welcome {
+    font-weight: 500;
+    font-size: 20px;
+    color: #150303;
+}
+.Hero_name {
+    color: #150303;
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+.Hero_p {
+    font-size: 14px;
+    color: #150303;
+    margin-bottom: 20px;
+}
+.Hero_hire {
+    padding: 12px 15px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #150303;
+}
+.image {
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: -20px;
+    width: 90px;
+    margin-left: 170px;
+}
+.image img{ 
+    background-color: white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.icons img {
+    height: 17px;
+    margin-bottom: 12px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.menu img {
+    height: 20px;
+    margin-top: 3px;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 910px) {
+.body {
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+@media screen and (max-width: 676px) {
+    .menu img {
+        visibility: visible;
+        display: block;
+        position: relative;
+        left: 250px;
+    }
+    .header ul li {
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 475px) {
+    .image{
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+}
