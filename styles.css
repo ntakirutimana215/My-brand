@@ -45,13 +45,18 @@ header {
   padding-right: 100px;
 } */
 
-.hello {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-  text-align: center;
-  justify-content: center;
-  flex: 1;
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;  
 }
 .hero_info {
   text-align: start;
@@ -61,12 +66,12 @@ header {
 .hero_info h1 {
   font-weight: bold;
   font-size: 30px;
-
+  
   color: #150303;
   /* background-color: #008552; */
   text-align: start;
 }
-.helo_info h3 {
+.Name {
   color: #150303;
   font-weight: bold;
   font-size: 30px;
@@ -76,6 +81,7 @@ header {
 .hero_info p {
   font-size: 15px;
   color: #150303;
+  margin-top: 17px;
   margin-bottom: 20px;
   text-align: start;
 }
@@ -90,17 +96,11 @@ header {
 }
 .image {
   margin-left: 50px;
-  border-radius: 70px;
   margin-top: 20px;
 }
 .image img {
   background-color: white;
-  width: auto;
-  height: 200px;
-  border-radius: 90px;
-
-
-  /* margin-right: 100%; */
+  border-radius: 100px;
 }
 .iconss{
   display: block;
@@ -129,6 +129,12 @@ section {
 }
 .section1 {
   padding-top: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  flex: 1;
 }
 
 /* ********* my resume*********** */
@@ -633,6 +639,33 @@ ul li a {
 #copy {
   text-align: center;
   align-items: center;
+}
+
+@media screen and (max-width: 360px) {
+  .nav__list {
+    position: fixed;
+    left: -100%;
+    top: 47px;
+    gap: 0;
+    display: flex;
+    background-color: #191627;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+   }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active  .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active  .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active  .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
 /* @media screen and (max-width: 360px) {
   body{
