@@ -15,7 +15,7 @@
 body {
   background-color: #c9d5d0;
   color: var(--text-color);
-  height: 100vh;
+
   box-sizing: border-box;
 }
 header {
@@ -56,27 +56,27 @@ header {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: white;  
+  background-color: white;
 }
 .hero_info {
-  text-align: start;
+  text-align: center;
   font-size: 20px;
+  /* background-color: #008552; */
 }
 
 .hero_info h1 {
   font-weight: bold;
   font-size: 30px;
-  
   color: #150303;
-  /* background-color: #008552; */
-  text-align: start;
+  /* background-color: #1b1d1c; */
+  text-align: center;
 }
 .Name {
   color: #150303;
   font-weight: bold;
   font-size: 15px;
   margin-bottom: 10px;
-  /* background-color: wheat; */
+  /* background-color: rgb(240, 167, 32); */
 }
 .hero_info p {
   font-size: 15px;
@@ -86,13 +86,12 @@ header {
   text-align: start;
 }
 .Hero_hire {
-  padding: 20px 30px;
+  padding: 12px 30px;
   border-radius: 7px;
-
   border: none;
   color: white;
   cursor: pointer;
-  background-color: #150303;
+  background-color: #9fd8ec;
 }
 .image {
   margin-left: 50px;
@@ -102,12 +101,11 @@ header {
   background-color: white;
   border-radius: 100px;
 }
-.iconss{
+.iconss {
   display: block;
   margin-bottom: 12px;
-  
 }
-.iconss img{
+.iconss img {
   padding-right: 5px;
 }
 .hero_info img {
@@ -128,10 +126,10 @@ section {
   margin-right: 15px;
 }
 .section1 {
-  padding-top: 170px;
+  padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 80vh;
   text-align: center;
   justify-content: center;
   flex: 1;
@@ -143,10 +141,11 @@ section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  text-align: start;
+  text-align: center;
   margin-bottom: 4px;
   margin-left: 10px;
   margin-right: 10px;
+  /* background-color: #172b4d; */
 }
 .myself {
   font-family: "Inter", sans-serif;
@@ -157,16 +156,15 @@ section {
   margin-bottom: 24px;
   text-align: center;
   justify-content: center;
-  /* background-colo: #cc4562;  */
+  background-color: #cc4562;
 }
 
 .exp {
   font-size: 16px;
   color: #0a172e;
-  text-align: center;
-  justify-content: center;
+  text-align: start;
+  justify-content: start;
   margin-bottom: 24px;
-
   justify-content: center;
   /* background-color: #344563;  */
 }
@@ -481,9 +479,8 @@ ul li a {
   flex-wrap: wrap;
   flex: 1;
   justify-content: space-around;
-  /* height: 40rem; */
   font-weight: bold;
-  background-color: #cc4562;
+  /* background-color: #cc4562; */
 }
 .container {
   text-align: start;
@@ -503,6 +500,7 @@ ul li a {
   font-size: 30px;
   margin-top: 15px;
   margin-bottom: 30px;
+  text-align: center;
 }
 /* #desc {
  
@@ -582,55 +580,52 @@ ul li a {
   text-transform: capitalize;
 }
 
-.footere {
-  background-color: #333;
+.footer{
+ background-color: #333;
+}
+.footere {  
+ 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: start;
-  border-radius: 10px;
+  height: 200px;
+  text-align: center;
+  justify-content: space-evenly;
 }
-.contme {
-  text-align: start;
-  font-size: 18px;
-}
-.contme h4 {
-  align-items: start;
-  font-size: 24px;
-  color: #000;
-}
-.links h4 {
-  color: #000;
-  font-size: 24px;
-}
-ul li {
-  list-style: none;
-  color: #fff;
-  text-align: start;
-}
-ul li a {
+.link a {
   text-decoration: none;
+  font-size: 20px;
   color: #fff;
+}
+.link h4 {
+  font-size: 20px;
+  color: #fff;
+}
+.link h6 {
+  font-size: 15px;
+  color: #fff;
+}
+.link {
+  margin-right: 15px;
+  margin-top: 37px;
 }
 #icons {
-  text-align: start;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  margin-left: 10px;
+ margin-left: -10px;
+  margin-top: 37px;
+  
 }
-#icons h4 {
-  color: #000;
-  font-size: 14px;
-  text-align: start;
-}
+
 #icons a {
   color: #fff;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 30px;
 }
 #menu button {
   padding: 10px;
   border: solid #fff 2px;
   border-radius: 6px;
   margin: 18px;
+  margin-left: 40px;
 }
 #menu a {
   color: #000;
@@ -639,17 +634,25 @@ ul li a {
 #copy {
   text-align: center;
   align-items: center;
+  color: #fff;
+   margin-bottom: 10px;
+  
+}
+#copy p{
+ font-size: 16px;
+ margin-bottom: 30px;
+
+  
 }
 @media screen and (max-width: 400px) {
   .image {
     align-items: center;
     margin-left: -28px;
-   }
-   .image img {
+  }
+  .image img {
     width: 190px;
-
-   }
-   .nav__list {
+  }
+  .nav__list {
     position: fixed;
     left: -100%;
     top: 47px;
@@ -660,19 +663,29 @@ ul li a {
     width: 100%;
     text-align: center;
     transition: 0.3s;
-   }
+  }
 
   .hamburger {
     display: block;
   }
-  .hamburger.active  .bar:nth-child(2) {
+  .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  .hamburger.active  .bar:nth-child(1) {
+  .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  .hamburger.active  .bar:nth-child(3) {
+  .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+  .footere {
+    flex-direction: column;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 458px) {
+  .footere {
+    flex-direction: column;
+    font-size: 12px;
   }
 }
 /* @media screen and (max-width: 360px) {
